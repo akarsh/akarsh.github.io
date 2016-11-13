@@ -2627,10 +2627,14 @@
 			display: block;
 			font-weight: 400;
 			margin: 0 0 1em 0;
+            text-align: left;
+
 		}
 
 		dl dd {
 			margin-left: 2em;
+            margin-bottom: 1em;
+            text-align: left;
 		}
 
 		dl.alt dt {
