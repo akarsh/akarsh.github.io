@@ -1,5 +1,5 @@
-### Akarsh Seggemu
-It is a website about me.
+### About
+My website project using the HTML5 Template. I had made several changes to the original template according to the way i want to show case data regarding myself. This website is about me.
 
 Credits:
 
