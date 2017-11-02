@@ -1,7 +1,8 @@
 ### About
-My website project using the HTML5 Template. I had made several changes to the original template according to the way i want to show case data regarding myself. This website is about me.
+This website project using a HTML5 Template 'Stellar by HTML5 UP'. I had made several changes to the original template according my requirements.
+This webiste is about me.
 
-Credits:
+#### Credits:
 
     Template:
         Stellar by HTML5 UP
