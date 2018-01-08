@@ -1,24 +1,21 @@
-### About
-This website project using a HTML5 Template 'Stellar by HTML5 UP'. I had made several changes to the original template according my requirements.
-This webiste is about me.
+# About
 
-#### Credits:
+This website project fullfils the [project rubric](https://review.udacity.com/?_ga=1.189245867.12280332.1465333852#!/projects/2962818615/rubric) of the course [JavaScript Basics](https://classroom.udacity.com/courses/ud804)
 
-    Template:
-        Stellar by HTML5 UP
-        html5up.net | @ajlkn
-        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+## Contents
 
-	Demo Images:
-		Unsplash (unsplash.com)
+This repository includes the following files:
 
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
+* **index.html**: The main HTML document. Contains links to all of the CSS and JS resources needed to render the resume, including resumeBuilder.js.
+* **js/helper.js**: Contains helper code needed to format the resume and build the map. It also has a few function shells for additional functionality. More on helper.js further down.
+* **js/resumeBuilder.js**: This file is empty. You should write your code here.
+* **js/jQuery.js**: The jQuery library.
+* **css/style.css**: Contains all of the CSS needed to style the page.
+* **README.md**: The GitHub readme file.
+* **images/standard_profile.jpg**: Profile picture of Akarsh Seggemu.
 
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		CSS3 Pie (css3pie.com)
-		Respond.js (j.mp/respondjs)
-		Scrollex (@ajlkn)
-		Skel (skel.io)
+## Credits
+
+Udacity and course instructors i.e. Cameron Pittman and James Williams
+
+FOSS community
