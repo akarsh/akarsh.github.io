@@ -13,7 +13,7 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr>';
+var HTMLheaderRole = '<span class="brightturquoise">%data%</span><hr>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
@@ -32,22 +32,22 @@ var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a>';
-var HTMLworkDates = '<div class="date-text">%data%</div>';
-var HTMLworkLocation = '<div class="location-text">%data%</div>';
+var HTMLworkEmployer = '<p class="redorange paragraph-header">%data%';
+var HTMLworkTitle = ' - %data%</p>';
+var HTMLworkDates = '<p class="date-text">%data%</p>';
+var HTMLworkLocation = '<p class="location-text">%data%</p>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
+var HTMLprojectTitle = '<p class="redorange paragraph-header">%data%</p>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectURL = '<a href="%data%">%data%</a><br>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
+var HTMLschoolName = '<p class="redorange paragraph-header">%data%';
+var HTMLschoolDegree = ' -- %data%</p>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
@@ -55,8 +55,8 @@ var HTMLschoolURL = '<br><a href="%data%">%data%</a><br>';
 
 var HTMLotherClasses = '<br><h3>Other Classes</h3>';
 var HTMLotherStart = '<div class="other-courses-entry"></div>';
-var HTMLotherSchool = '<a href="#">%data%';
-var HTMLotherTitle = ' -- %data%</a>';
+var HTMLotherSchool = '<p class="redorange paragraph-header">%data%';
+var HTMLotherTitle = ' -- %data%</p>';
 var HTMLotherDates = '<div class="date-text">%data%</div>';
 var HTMLotherLocation = '<div class="location-text">%data%</div>';
 var HTMLotherURL = '<br><a href="%data%">%data%</a><br>';

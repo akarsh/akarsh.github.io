@@ -9,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
+  padding: 15px;
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
@@ -49,7 +49,7 @@ h3 {
 
 h4 {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   color: #4a4a4a;
   line-height: 17px;
 }
@@ -59,37 +59,40 @@ h3,
 h4,
 h5 {
   padding: 10px 5%;
-
 }
-
 
 .date-text {
   font-style: italic;
-  font-size: 14px;
+  font-size: 16px;
+  color: #999;
+  line-height: 16px;
+  float: left;
+
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 16px;
   color: #999;
   line-height: 16px;
   float: left;
 }
 
-.location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: right;
-
-}
-
 p {
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   line-height: 21px;
   text-align: justify;
-  padding: 0 4cm 0 0;
 }
 
 a {
   color: #1199c3;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.paragraph-header {
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -130,7 +133,17 @@ a {
   background-color: #4a4a4a;
 }
 
+.brightturquoise {
+  color: #23DBF5;
+}
+
+.redorange {
+  color: #F53D23;
+}
+
+
 /* TODO: Replace with image later */
+
 #header {
   background-color: #484848;
 }
@@ -178,6 +191,7 @@ span {
   text-align: center;
 }
 
+
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
@@ -220,5 +234,21 @@ span {
   #skills-h3,
   .biopic {
     display: block;
+  }
+}
+
+
+/* printing a4 size */
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
   }
 }

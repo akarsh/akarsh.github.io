@@ -254,4 +254,4 @@ education.display();
 inName(bio.name);
 
 $("#mapDiv").append(googleMap);
-$("#footerContacts").append(formattedEmail + formattedMobile + formattedGithub + formattedTwitter + formattedLinkedin);
+$("#footerContacts").append(formattedLocation + formattedEmail + formattedMobile + formattedGithub + formattedTwitter + formattedLinkedin);
