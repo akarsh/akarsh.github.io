@@ -33,32 +33,32 @@ var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<p class="redorange paragraph-header">%data%';
-var HTMLworkTitle = ' - %data%</p>';
+var HTMLworkTitle = '<span class="oobaff">  %data%</span></p>';
 var HTMLworkDates = '<p class="date-text">%data%</p>';
 var HTMLworkLocation = '<p class="location-text">%data%</p>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<p class="redorange paragraph-header">%data%</p>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
+var HTMLprojectDates = '<p class="date-text">%data%</p>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectURL = '<a href="%data%">%data%</a><br>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<p class="redorange paragraph-header">%data%';
-var HTMLschoolDegree = ' -- %data%</p>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
-var HTMLschoolURL = '<br><a href="%data%">%data%</a><br>';
+var HTMLschoolDegree = '<span class="oobaff">  %data%</span></p>';
+var HTMLschoolDates = '<p class="date-text">%data%</p>';
+var HTMLschoolLocation = '<p class="location-text">%data%</p>';
+var HTMLschoolMajor = '<p><br>Major: %data%</p>';
+var HTMLschoolURL = '<a href="%data%">%data%</a><br>';
 
 var HTMLotherClasses = '<br><h3>Other Classes</h3>';
 var HTMLotherStart = '<div class="other-courses-entry"></div>';
 var HTMLotherSchool = '<p class="redorange paragraph-header">%data%';
-var HTMLotherTitle = ' -- %data%</p>';
-var HTMLotherDates = '<div class="date-text">%data%</div>';
-var HTMLotherLocation = '<div class="location-text">%data%</div>';
+var HTMLotherTitle = '<span class="oobaff">  %data%</span></p>';
+var HTMLotherDates = '<p class="date-text">%data%</p>';
+var HTMLotherLocation = '<p class="location-text">%data%</p><p></p>';
 var HTMLotherURL = '<br><a href="%data%">%data%</a><br>';
 
 var internationalizeButton = '<button>Internationalize</button>';
