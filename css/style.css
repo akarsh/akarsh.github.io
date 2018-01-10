@@ -154,14 +154,13 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
 }
 
 .flex-column {
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .center-content {
