@@ -44,10 +44,10 @@
         }],
         "info":
         {
-            "Nationality": "Indisch",
-            "Work permit": "Ja",
-            "Date of birth": "1991-08-23",
-            "Place of birth": "Perka Kondaram"
+            "nationality": "Indisch",
+            "workPermit": "Ja",
+            "dateOfBirth": "1991-08-23",
+            "placeOfBirth": "Perka Kondaram"
         }
     },
     "work": [
