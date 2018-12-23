@@ -41,7 +41,14 @@
             "network": "Duolingo",
             "username": "akarshseggemu",
             "url": "https://www.duolingo.com/akarshseggemu"
-        }]
+        }],
+        "info":
+        {
+            "Nationality": "Indian",
+            "Work permit": "Yes",
+            "Date of birth": "1991-08-23",
+            "Place of birth": "Perka Kondaram"
+        }
     },
     "work": [
     {
