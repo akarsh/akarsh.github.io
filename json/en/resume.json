@@ -58,10 +58,23 @@
     "work": [
     {
         "company": "Fyber GmbH",
+        "position": "Junior Software Engineer",
+        "website": "https://www.fyber.com",
+        "startDate": "2018-11-01",
+        "endDate": "",
+        "summary": "",
+        "highlights": ["Collaborated closely with different units i.e. sales, marketing and research & development to understand their vision of a promising solution for the end users and breaking it down into a backlog of user stories and implemented them.",
+            "Applied lean and agile development process using Extreme Programming methods in the delivery of a minimal viable product (MVP)",
+            "Worked closely with Mobile Software Development Kit (SDK) teams both Android and iOS in fixing bugs.",
+            "Written code that aligns with company engineering standards and clean code principles."
+        ]
+    },
+    {
+        "company": "Fyber GmbH",
         "position": "Junior Solution Engineer",
         "website": "https://www.fyber.com",
         "startDate": "2018-01-01",
-        "endDate": "",
+        "endDate": "2018-10-31",
         "summary": "",
         "highlights": ["Guided and supported app and game developers in their integration with Fyber products i.e. Fyber native SDKs, plugins and APIs.",
             "Received and resolved escalations from the app and game developers as well as account management relating to SDK and API integration, reporting discrepancies, use of the dashboard etc.",
