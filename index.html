@@ -14,18 +14,20 @@
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Font Awesome -->
   <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
 </head>
 
 <!-- Scrollspy is used to automatically update links in a navigation list based on scroll position. -->
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!-- Navigation bar -->
-  <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top" >
+  <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Akarsh SEGGEMU</a>
+      <a class="navbar-brand" href="#">Akarsh SEGGEMU</a>
       <ul class="navbar-nav navbar-right">
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
@@ -42,9 +44,17 @@
 
   <!-- About section -->
   <div id="about" class="container">
-    <div class="pb-2 mt-4 mb-2 border-bottom">
-      <h3>About</h3>
-    </div>
+    <h3>About</h3>
+    <!-- card to show profile picture with name and job title -->
+    <div class="card" style="width:240px;">
+        <img class="card-img-top" alt="picture of akarsh seggemu" src="images/standard_profile.jpg">
+        <div class="card-body">
+          <h4 class="card-title">
+            Akarsh SEGGEMU
+          </h4>
+          <p>Software Engineer</p>
+        </div>
+      </div>
     <div class="media">
       <div class="media-body">
         <div class="col-md-offset-1 well text-justify">
@@ -60,31 +70,27 @@
             human interface guidelines and fit into their respective ecosystems with distinct branding.</p>
         </div>
         <div class="col-md-offset-1 well well-sm text-center">
-          Software Engineer - Mobile with an experience of 5+ years
+
         </div>
       </div>
-      <div class="media-right">
-        <img class="img-rounded" alt="picture of akarsh seggemu" src="images/standard_profile.jpg">
-      </div>
-      <!-- Work Experience section -->
-      <div class="pb-2 mt-4 mb-2 border-bottom">
-        <h3>Résumé</h3>
-      </div>
-      <div class="row">
-        <div class="col-md-offset-1 col-md-8">
-          <a class="btn btn-default btn-md btn-primary" role="button" href="resumes/akarshSeggemu_Resume_DE.pdf"
-            download="akarshSeggemu_Resume_DE.pdf">
-            <i class="fas fa-download fa-2x"></i> &nbsp; &nbsp; Résumé in German
-            <i class="fas fa-file-pdf fa-1x"></i>
-          </a>
-          <br>
-          <br>
-          <a class="btn btn-default btn-md btn-primary" role="button" href="resumes/akarshSeggemu_Resume_EN.pdf"
-            download="akarshSeggemu_Resume_EN.pdf">
-            <i class="fas fa-download fa-2x"></i> &nbsp; &nbsp; Résumé in English
-            <i class="fas fa-file-pdf fa-1x"></i>
-          </a>
-        </div>
+    </div>
+
+    <!-- Work Experience section -->
+    <h3>Résumé</h3>
+    <div class="row">
+      <div class="col-md-offset-1 col-md-8">
+        <a class="btn btn-default btn-md btn-primary" role="button" href="resumes/akarshSeggemu_Resume_DE.pdf"
+          download="akarshSeggemu_Resume_DE.pdf">
+          <i class="fas fa-download fa-2x"></i> &nbsp; &nbsp; Résumé in German
+          <i class="fas fa-file-pdf fa-1x"></i>
+        </a>
+        <br>
+        <br>
+        <a class="btn btn-default btn-md btn-primary" role="button" href="resumes/akarshSeggemu_Resume_EN.pdf"
+          download="akarshSeggemu_Resume_EN.pdf">
+          <i class="fas fa-download fa-2x"></i> &nbsp; &nbsp; Résumé in English
+          <i class="fas fa-file-pdf fa-1x"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -252,9 +258,15 @@
   </footer>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
 </body>
