@@ -56,17 +56,32 @@
         }
     },
     "work": [
+   {
+        "company": "Fyber GmbH",
+        "position": "Software Engineer",
+        "website": "https://www.fyber.com",
+        "startDate": "2021-01-01",
+        "endDate": "",
+        "summary": "",
+        "highlights": ["Angewandter lean und agiler Entwicklungsprozess unter Verwendung von Extreme Programming Methoden bei der Bereitstellung eines minimal viable Produkt (MVP) d.h. internal client app.",
+            "Arbeitete zusammen mit dem Mobile Software Development Kit (SDK), das sowohl Android als auch iOS bei der Behebung der Fehler unterstützt.",
+            "An Code-Reviews teilgenommen und automatisierte Tests geschrieben.",
+            "Enge Zusammenarbeit mit verschiedenen Einheiten wie Vertrieb, Marketing sowie Forschung und Entwicklung, um ihre Vision einer vielversprechenden Lösung für die Endanwender zu verstehen und sie in einen Backlog von User Stories aufzuschlüsseln und umzusetzen.",
+            "Geschrieben Code, der sich an den technischen Standards des Unternehmens und den Prinzipien des Clean Code orientiert."
+        ]
+    },
     {
         "company": "Fyber GmbH",
         "position": "Junior Software Engineer",
         "website": "https://www.fyber.com",
         "startDate": "2018-11-01",
-        "endDate": "",
+        "endDate": "2020-12-31",
         "summary": "",
-        "highlights": ["Collaborated closely with different units i.e. sales, marketing and research & development to understand their vision of a promising solution for the end users and breaking it down into a backlog of user stories and implemented them.",
-            "Applied lean and agile development process using Extreme Programming methods in the delivery of a minimal viable product (MVP)",
-            "Worked closely with Mobile Software Development Kit (SDK) teams both Android and iOS in fixing bugs.",
-            "Written code that aligns with company engineering standards and clean code principles."
+        "highlights": ["Angewandter lean und agiler Entwicklungsprozess unter Verwendung von Extreme Programming Methoden bei der Bereitstellung eines minimal viable Produkt (MVP) d.h. internal client app.",
+            "Arbeitete zusammen mit dem Mobile Software Development Kit (SDK), das sowohl Android als auch iOS bei der Behebung der Fehler unterstützt.",
+            "An Code-Reviews teilgenommen und automatisierte Tests geschrieben.",
+            "Enge Zusammenarbeit mit verschiedenen Einheiten wie Vertrieb, Marketing sowie Forschung und Entwicklung, um ihre Vision einer vielversprechenden Lösung für die Endanwender zu verstehen und sie in einen Backlog von User Stories aufzuschlüsseln und umzusetzen.",
+            "Geschrieben Code, der sich an den technischen Standards des Unternehmens und den Prinzipien des Clean Code orientiert."
         ]
     },
     {
