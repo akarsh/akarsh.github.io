@@ -6,12 +6,12 @@
         "picture": "https://raw.githubusercontent.com/akarsh/akarsh.github.io/master/images/standard_profile.jpg",
         "email": "akarshseggemu@gmail.com",
         "phone": "+4915752417519",
-        "website": "https://sakarsh.com",
+        "website": "https://akarsh.github.io",
         "summary": "Ever since I built my first Windows Phone app during final year of my Bachelor studies (i.e. Computer Science & Engineering), I have a passion for developing apps that stay in align with mobile usability guidelines. On 7 December 2017, I completed my master's degree in Computer Science from Technische Universitaet Berlin, Berlin. Self-taught Application developer (i.e. Windows Phone, Windows 8, Android and iOS), specializing in native apps. I have created apps for Windows Phone, Windows 8, Android and iOS that follow human interface design guidelines and fit into Windows, Android and iOS ecosystem with distinct branding.",
         "location":
         {
-            "address": "Löwenberger strasse 2, 6. O.G., Apartment - 13",
-            "postalCode": "10315",
+            "address": "Gotzkowsky strasse 26, Hinter Haus, Etage 4",
+            "postalCode": "10555",
             "city": "Berlin",
             "countryCode": "DE",
             "region": "Germany"
@@ -58,14 +58,29 @@
     "work": [
     {
         "company": "Fyber GmbH",
+        "position": "Software Engineer",
+        "website": "https://www.fyber.com",
+        "startDate": "2021-01-01",
+        "endDate": "",
+        "summary": "",
+        "highlights": ["Collaborated closely with different units i.e. sales, marketing and research & development to understand their vision of a promising solution for the end-users and breaking it down into a backlog of user stories and implemented them.",
+            "Participated in code reviews and written automated tests.",
+            "Applied agile development process in the delivery of a minimal viable product (MVP) i.e. internal mobile client apps.",
+            "Worked in the Mobile Software Development Kit (SDK) teams both Android and iOS in fixing bugs.",
+            "Written code that aligns with company engineering standards and clean code principles."
+        ]
+    },
+    {
+        "company": "Fyber GmbH",
         "position": "Junior Software Engineer",
         "website": "https://www.fyber.com",
         "startDate": "2018-11-01",
-        "endDate": "",
+        "endDate": "2020-12-31",
         "summary": "",
-        "highlights": ["Collaborated closely with different units i.e. sales, marketing and research & development to understand their vision of a promising solution for the end users and breaking it down into a backlog of user stories and implemented them.",
-            "Applied lean and agile development process using Extreme Programming methods in the delivery of a minimal viable product (MVP)",
-            "Worked closely with Mobile Software Development Kit (SDK) teams both Android and iOS in fixing bugs.",
+        "highlights": ["Collaborated closely with different units i.e. sales, marketing and research & development to understand their vision of a promising solution for the end-users and breaking it down into a backlog of user stories and implemented them.",
+            "Participated in code reviews and written automated tests.",
+            "Applied agile development process in the delivery of a minimal viable product (MVP) i.e. internal mobile client apps.",
+            "Worked in the Mobile Software Development Kit (SDK) teams both Android and iOS in fixing bugs.",
             "Written code that aligns with company engineering standards and clean code principles."
         ]
     },
