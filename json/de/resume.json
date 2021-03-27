@@ -17,38 +17,38 @@
             "region": "Deutschland"
         },
         "profiles": [
-        {
-            "network": "Twitter",
-            "username": "akarshseggemu",
-            "url": "https://twitter.com/akarshseggemu"
-        },
-        {
-            "network": "LinkedIn",
-            "username": "akarshseggemu",
-            "url": "https://www.linkedin.com/in/akarshseggemu"
-        },
-        {
-            "network": "GitHub",
-            "username": "akarsh",
-            "url": "https://github.com/akarsh"
-        },
-        {
-            "network": "stackoverflow",
-            "username": "akarsh",
-            "url": "https://stackoverflow.com/cv/akarsh"
-        },
-        {
-            "network": "Duolingo",
-            "username": "akarshseggemu",
-            "url": "https://www.duolingo.com/akarshseggemu"
-        },
-        {
-            "network": "Xing",
-            "username": "akarsh.seggemu",
-            "url": "https://www.xing.com/profile/Akarsh_Seggemu"
-        }],
-        "info":
-        {
+            {
+                "network": "Twitter",
+                "username": "akarshseggemu",
+                "url": "https://twitter.com/akarshseggemu"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "akarshseggemu",
+                "url": "https://www.linkedin.com/in/akarshseggemu"
+            },
+            {
+                "network": "GitHub",
+                "username": "akarsh",
+                "url": "https://github.com/akarsh"
+            },
+            {
+                "network": "stackoverflow",
+                "username": "akarsh",
+                "url": "https://stackoverflow.com/cv/akarsh"
+            },
+            {
+                "network": "Duolingo",
+                "username": "akarshseggemu",
+                "url": "https://www.duolingo.com/akarshseggemu"
+            },
+            {
+                "network": "Xing",
+                "username": "akarsh.seggemu",
+                "url": "https://www.xing.com/profile/Akarsh_Seggemu"
+            }
+        ],
+        "info": {
             "nationality": "Indisch",
             "workPermit": "Ja",
             "dateOfBirth": "1991-08-23",
@@ -56,350 +56,369 @@
         }
     },
     "work": [
-   {
-        "company": "Fyber GmbH",
-        "position": "Software Engineer",
-        "website": "https://www.fyber.com",
-        "startDate": "2021-01-01",
-        "endDate": "",
-        "summary": "",
-        "highlights": ["Angewandter lean und agiler Entwicklungsprozess unter Verwendung von Extreme Programming Methoden bei der Bereitstellung eines minimal viable Produkt (MVP) d.h. internal client app.",
-            "Arbeitete zusammen mit dem Mobile Software Development Kit (SDK), das sowohl Android als auch iOS bei der Behebung der Fehler unterstützt.",
-            "An Code-Reviews teilgenommen und automatisierte Tests geschrieben.",
-            "Enge Zusammenarbeit mit verschiedenen Einheiten wie Vertrieb, Marketing sowie Forschung und Entwicklung, um ihre Vision einer vielversprechenden Lösung für die Endanwender zu verstehen und sie in einen Backlog von User Stories aufzuschlüsseln und umzusetzen.",
-            "Geschrieben Code, der sich an den technischen Standards des Unternehmens und den Prinzipien des Clean Code orientiert."
-        ]
-    },
-    {
-        "company": "Fyber GmbH",
-        "position": "Junior Software Engineer",
-        "website": "https://www.fyber.com",
-        "startDate": "2018-11-01",
-        "endDate": "2020-12-31",
-        "summary": "",
-        "highlights": ["Angewandter lean und agiler Entwicklungsprozess unter Verwendung von Extreme Programming Methoden bei der Bereitstellung eines minimal viable Produkt (MVP) d.h. internal client app.",
-            "Arbeitete zusammen mit dem Mobile Software Development Kit (SDK), das sowohl Android als auch iOS bei der Behebung der Fehler unterstützt.",
-            "An Code-Reviews teilgenommen und automatisierte Tests geschrieben.",
-            "Enge Zusammenarbeit mit verschiedenen Einheiten wie Vertrieb, Marketing sowie Forschung und Entwicklung, um ihre Vision einer vielversprechenden Lösung für die Endanwender zu verstehen und sie in einen Backlog von User Stories aufzuschlüsseln und umzusetzen.",
-            "Geschrieben Code, der sich an den technischen Standards des Unternehmens und den Prinzipien des Clean Code orientiert."
-        ]
-    },
-    {
-        "company": "Fyber GmbH",
-        "position": "Junior Solution Engineer",
-        "website": "https://www.fyber.com",
-        "startDate": "2018-01-01",
-        "endDate": "2018-10-31",
-        "summary": "",
-        "highlights": ["Guided and supported app and game developers in their integration with Fyber products i.e. Fyber native SDKs, plugins and APIs.",
-            "Received and resolved escalations from the app and game developers as well as account management relating to SDK and API integration, reporting discrepancies, use of the dashboard etc.",
-            "Used a variety of tools such as log analysis, SQL queries, Fyber in-house tools and worked closely with different teams (i.e. engineering, product and business intelligence) to get to the bottom of an issue.",
-            "Actively managed ongoing escalations and communicated with clients (external, mainly phone but onsite from time to time as well) and account management teams in the process of resolution.",
-            "Continuously helped to improve the operational workflow within the solution engineering organization by improving documentation as well as ticketing and prioritization processes.",
-            "Provided coaching and guidance in the analysis and resolution of issues.",
-            "Helped in setting up systems to monitor the health of integrations and products in use by clients and escalate irregularities."
-        ]
-    },
-    {
-        "company": "Fyber GmbH",
-        "position": "Solution Engineer, App and Games - Werkstudent",
-        "website": "https://www.fyber.com",
-        "startDate": "2015-05-01",
-        "endDate": "2017-12-31",
-        "summary": "",
-        "highlights": ["Supported in integration and optimization of Fyber products for Fyber customers.",
-            "Investigated irregularities, malfunctions and issues related to Fyber products.",
-            "Produced functional projects for integrating Fyber products in Unity 3D, Android and iOS.",
-            "Tracked customer issues by using JIRA, documented internal projects in the internal wiki."
-        ]
-    },
-    {
-        "company": "Wkda GmbH",
-        "position": "Quality Assurance - Werkstudent",
-        "website": "https://www.wirkaufendeinauto.de",
-        "startDate": "2015-03-23",
-        "endDate": "2015-04-30",
-        "summary": "",
-        "highlights": ["Actively tested software features using both, manual and automated tests.",
-            "Reported test results and errors to the development team.",
-            "Assisted in the preparation of test plans for software testing.",
-            "Improved and maintained the quality of workflows and procedures."
-        ]
-    },
-    {
-        "company": "Pricepanda Group GmbH",
-        "position": "Data/Data Maintenance Engineer - Wekstudent",
-        "website": "https://www.pricepanda.co.id/",
-        "startDate": "2014-12-22",
-        "endDate": "2015-03-19",
-        "summary": "",
-        "highlights": ["Built wrappers for online-shops based in APAC zone market (i.e., Philippines, Indonesia, and, Singapore)",
-            "Managed database tables & updated tables with the new crawled data from online- shops on daily basis",
-            "Documented project workflow in internal wiki documentation",
-            "Tracked internal issues using JIRA."
-        ]
-    },
-    {
-        "company": "German Aerospace Center (DLR)",
-        "position": "Java programmer - Werkstudent",
-        "website": "https://dlr.de",
-        "startDate": "2014-05-26",
-        "endDate": "2014-08-28",
-        "summary": "",
-        "highlights": ["Created maps of Berlin with geodatabase using GIS tools (i.e., PostGIS, OpenJump)",
-            "Maintained simulation programming scripts",
-            "Documented project workflow in internal wiki portal of DLR."
-        ]
-    },
-    {
-        "company": "Viatecla-Soluções Informáticas e Comunicações SA",
-        "position": "Software Development Engineer",
-        "website": "https://www.viatecla.com",
-        "startDate": "2013-02-25",
-        "endDate": "2013-06-25",
-        "summary": "",
-        "highlights": ["Created a functional windows phone 7.5 application for flight search, scheduling & ticket booking",
-            "Documented the project workflow and tests in MS word",
-            "Created a C# application to parse & create a Microsoft Excel file containing logs of SQL database tables of a magazine application published in iOS & Windows 8",
-            "Created an android application to implement Google Cloud Messaging Service (GCMS)."
-        ]
-    },
-    {
-        "company": "Edukinect",
-        "position": "Research & Development Engineer",
-        "website": "http://www.edu-kinect.com",
-        "startDate": "2012-05-01",
-        "endDate": "2013-02-21",
-        "summary": "",
-        "highlights": ["Created a functional application on windows 8 using metro user interface (UI)",
-            "Trained several students on Windows 8 application development."
-        ]
-    },
-    {
-        "company": "Ray Business Technologies Pvt Ltd",
-        "position": "Software Development Engineer Trainee",
-        "website": "https://www.raybiztech.com",
-        "startDate": "2012-02-27",
-        "endDate": "2012-04-30",
-        "summary": "",
-        "highlights": ["Created a functional windows phone 7.5 application for integration of Microsoft Dynamics CRM",
-            "Documented implementation of CRM in MS word."
-        ]
-    },
-    {
-        "company": "Edukinect",
-        "position": "Intern",
-        "website": "http://www.edu-kinect.com",
-        "startDate": "2011-09-12",
-        "endDate": "2012-01-31",
-        "summary": "",
-        "highlights": ["Created several functional applications in windows phone 7 & 7.5"]
-    }],
+        {
+            "company": "Fyber GmbH",
+            "position": "Software Engineer",
+            "website": "https://www.fyber.com",
+            "startDate": "2021-01-01",
+            "endDate": "",
+            "summary": "",
+            "highlights": [
+                "Enge Zusammenarbeit mit verschiedenen Abteilungen, z.B. Vertrieb, Marketing und Forschung & Entwicklung, um deren Vision einer vielversprechenden Lösung für die Endbenutzer zu verstehen und diese in ein Backlog von User Stories herunterzubrechen und zu implementieren.",
+                "Hat an Code-Reviews teilgenommen und automatisierte Tests geschrieben.",
+                "Angewandter agiler Entwicklungsprozess bei der Bereitstellung eines Minimal Viable Product (MVP), d.h. interner mobiler Client-Apps.",
+                "Arbeitete in den Mobile Software Development Kit (SDK)-Teams sowohl für Android als auch für iOS an der Behebung von Fehlern.",
+                "Geschrieben Code, der sich an den technischen Standards des Unternehmens und den Prinzipien des Clean Code orientiert."
+            ]
+        },
+        {
+            "company": "Fyber GmbH",
+            "position": "Junior Software Engineer",
+            "website": "https://www.fyber.com",
+            "startDate": "2018-11-01",
+            "endDate": "2020-12-31",
+            "summary": "",
+            "highlights": [
+                "Enge Zusammenarbeit mit verschiedenen Abteilungen, z.B. Vertrieb, Marketing und Forschung & Entwicklung, um deren Vision einer vielversprechenden Lösung für die Endbenutzer zu verstehen und diese in ein Backlog von User Stories herunterzubrechen und zu implementieren.",
+                "Hat an Code-Reviews teilgenommen und automatisierte Tests geschrieben.",
+                "Angewandter agiler Entwicklungsprozess bei der Bereitstellung eines Minimal Viable Product (MVP), d.h. interner mobiler Client-Apps.",
+                "Arbeitete in den Mobile Software Development Kit (SDK)-Teams sowohl für Android als auch für iOS an der Behebung von Fehlern.",
+                "Geschrieben Code, der sich an den technischen Standards des Unternehmens und den Prinzipien des Clean Code orientiert."
+            ]
+        },
+        {
+            "company": "Fyber GmbH",
+            "position": "Junior Solution Engineer",
+            "website": "https://www.fyber.com",
+            "startDate": "2018-01-01",
+            "endDate": "2018-10-31",
+            "summary": "",
+            "highlights": [
+                "Leitete und unterstützte App- und Spiele-Entwickler bei der Integration mit Fyber-Produkten, d.h. Fyber-native SDKs, Plugins und APIs.",
+                "Empfing und löste Eskalationen von den App- und Spiele-Entwicklern sowie dem Account Management in Bezug auf SDK- und API-Integration, Berichtsdiskrepanzen, Nutzung des Dashboards usw.",
+                "Nutzte eine Vielzahl von Tools wie Log-Analysen, SQL-Abfragen, Fyber-interne Tools und arbeitete eng mit verschiedenen Teams zusammen (z. B. Engineering, Produkt und Business Intelligenz), um einem Problem auf den Grund zu gehen.",
+                "Aktives Management laufender Eskalationen und Kommunikation mit Kunden (extern, hauptsächlich per Telefon, aber ab und zu auch vor Ort) und Account-Management-Teams im Rahmen des Lösungsprozesses.",
+                "Kontinuierliche Unterstützung bei der Verbesserung des operativen Arbeitsablaufs innerhalb der Solution-Engineering-Organisation durch Verbesserung der Dokumentation sowie der Ticketing- und Prioritätsprozesse.",
+                "Bietet Coaching und Anleitung bei der Analyse und Lösung von Problemen.",
+                "Mithilfe bei der Einrichtung von Systemen zur Überwachung des Zustands von Integrationen und Produkten, die von Kunden verwendet werden, und zur Eskalation von Unregelmäßigkeiten."
+            ]
+        },
+        {
+            "company": "Fyber GmbH",
+            "position": "Solution Engineer, App and Games - Werkstudent",
+            "website": "https://www.fyber.com",
+            "startDate": "2015-05-01",
+            "endDate": "2017-12-31",
+            "summary": "",
+            "highlights": [
+                "Unterstützte bei der Integration und Optimierung von Fyber-Produkten für Fyber-Kunden.",
+                "Untersucht Unregelmäßigkeiten, Fehlfunktionen und Probleme im Zusammenhang mit Fyber-Produkten.",
+                "Erstellte funktionale Projekte zur Integration von Fyber-Produkten in Unity 3D, Android und iOS.",
+                "Verfolgte Kundenprobleme mit Hilfe von JIRA, dokumentierte interne Projekte im internen Wiki."
+            ]
+        },
+        {
+            "company": "Wkda GmbH",
+            "position": "Quality Assurance - Werkstudent",
+            "website": "https://www.wirkaufendeinauto.de",
+            "startDate": "2015-03-23",
+            "endDate": "2015-04-30",
+            "summary": "",
+            "highlights": [
+                "Aktiv getestete Softwarefunktionen mit manuellen und automatisierten Tests.",
+                "Testergebnisse und Fehler an das Entwicklungsteam gemeldet. Unterstützung bei der Erstellung von Testplänen für Softwaretests.",
+                "Verbesserung und Aufrechterhaltung der Qualität von Workflows und Verfahren."
+            ]
+        },
+        {
+            "company": "Pricepanda Group GmbH",
+            "position": "Data/Data Maintenance Engineer - Wekstudent",
+            "website": "https://www.pricepanda.co.id/",
+            "startDate": "2014-12-22",
+            "endDate": "2015-03-19",
+            "summary": "",
+            "highlights": [
+                "Gebaute Wrapper für Online-Shops mit Sitz in der APAC-Zone (d. H. Philippinen, Indonesien und Singapur).",
+                "Verwaltete Datenbanktabellen und aktualisierte Tabellen mit den täglich neu durchsuchten Daten aus Online-Shops.",
+                "Dokumentierter Projektworkflow in der internen Wiki-Dokumentation.",
+                "Verfolgte interne Probleme mit JIRA.",
+                "Analyse und Einführung neuer Preisvergleichskategorien und Partner-Shops durch Vorbereitung und Erstellung der Partnerinfrastruktur, Importieren und Anpassen der Produktpreise unserer lokalen Partner und Veröffentlichen der Partner-Shops (Hochladen von Daten, Qualitätssicherung des Shops)."
+            ]
+        },
+        {
+            "company": "German Aerospace Center (DLR)",
+            "position": "Java programmer - Werkstudent",
+            "website": "https://dlr.de",
+            "startDate": "2014-05-26",
+            "endDate": "2014-08-28",
+            "summary": "",
+            "highlights": [
+                "Mit GIS-Tools (d. H. PostGIS, OpenJump) Karten von Berlin mit Geodatabase erstellt.",
+                "Verwaltete Simulationsprogrammierungsskripte.",
+                "Dokumentierter Projektworkflow im internen Wiki-Portal des DLR."
+            ]
+        },
+        {
+            "company": "Viatecla-Soluções Informáticas e Comunicações SA",
+            "position": "Software Development Engineer",
+            "website": "https://www.viatecla.com",
+            "startDate": "2013-02-25",
+            "endDate": "2013-06-25",
+            "summary": "",
+            "highlights": [
+                "Erstellt eine funktionierende Windows Phone 7.5-Anwendung für Flugsuche, Terminplanung und Ticketbuchung.",
+                "Dokumentierte den Projektworkflow und die Tests in MS Word.",
+                "Erstellt eine C # -Anwendung zum Parsen und Erstellen einer MS Excel-Datei mit Protokollen von SQL-Datenbanktabellen einer in iOS und Windows 8 veröffentlichten Magazinanwendung.",
+                "Erstellt eine Android-Anwendung zur Implementierung des Google Cloud Messaging Service (GCMS)."
+            ]
+        },
+        {
+            "company": "Edukinect",
+            "position": "Research & Development Engineer",
+            "website": "http://www.edu-kinect.com",
+            "startDate": "2012-05-01",
+            "endDate": "2013-02-21",
+            "summary": "",
+            "highlights": [
+                "eine funktionale Anwendung unter Windows erstellen 8 Metro-Benutzeroberfläche (UI).",
+                "Mehrere Schüler in der Windows 8-Anwendungsentwicklung geschult."
+            ]
+        },
+        {
+            "company": "Ray Business Technologies Pvt Ltd",
+            "position": "Software Development Engineer Trainee",
+            "website": "https://www.raybiztech.com",
+            "startDate": "2012-02-27",
+            "endDate": "2012-04-30",
+            "summary": "",
+            "highlights": [
+                "Erstellt eine funktionierende Windows Phone 7.5-Anwendung für die Integration von Microsoft Dynamics CRM.",
+                "Dokumentierte Implementierung von CRM in MS Word."
+            ]
+        },
+        {
+            "company": "Edukinect",
+            "position": "Intern",
+            "website": "http://www.edu-kinect.com",
+            "startDate": "2011-09-12",
+            "endDate": "2012-01-31",
+            "summary": "",
+            "highlights": [
+                "In Windows Phone 7 und 7.5 wurden mehrere funktionale Anwendungen erstellt"
+            ]
+        }
+    ],
     "volunteer": [
-    {
-        "organization": "AIESEC Hyderabad",
-        "position": "Sales & Marketing in Corperate Relations",
-        "website": "https://www.aiesec.in",
-        "startDate": "2011-08-01",
-        "endDate": "2012-09-30",
-        "summary": "",
-        "highlights": []
-    },
-    {
-        "organization": "Studentische Selbstverwaltung Franz-Mehring-Platz",
-        "position": "Board Member",
-        "website": "",
-        "startDate": "2017-04-01",
-        "endDate": "2017-11-30",
-        "summary": "",
-        "highlights": []
-    },
-    {
-        "organization": "Swift Dev Ninjas Meetup",
-        "position": "Co Organizer",
-        "website": "https://www.meetup.com/Swift-Dev-Ninjas",
-        "startDate": "2018-08-01",
-        "endDate": "",
-        "summary": "",
-        "highlights": []
-    }],
+        {
+            "organization": "AIESEC Hyderabad",
+            "position": "Sales & Marketing in Corperate Relations",
+            "website": "https://www.aiesec.in",
+            "startDate": "2011-08-01",
+            "endDate": "2012-09-30",
+            "summary": "",
+            "highlights": []
+        },
+        {
+            "organization": "Studentische Selbstverwaltung Franz-Mehring-Platz",
+            "position": "Board Member",
+            "website": "",
+            "startDate": "2017-04-01",
+            "endDate": "2017-11-30",
+            "summary": "",
+            "highlights": []
+        },
+        {
+            "organization": "Swift Dev Ninjas Meetup",
+            "position": "Co Organizer",
+            "website": "https://www.meetup.com/Swift-Dev-Ninjas",
+            "startDate": "2018-08-01",
+            "endDate": "",
+            "summary": "",
+            "highlights": []
+        }
+    ],
     "education": [
-    {
-        "institution": "Technical Universitaet Berlin",
-        "area": "Computer Science",
-        "studyType": "M.Sc.",
-        "startDate": "2016-10-01",
-        "endDate": "2017-12-07",
-        "gpa": "2.2",
-        "courses": []
-    },
-    {
-        "institution": "Beuth University of Applied Sciences",
-        "area": "Qualifizierung fuer zugewanderte Akademiker/innen",
-        "studyType": "Beuth Bonus",
-        "startDate": "2016-09-29",
-        "endDate": "2017-05-30",
-        "gpa": "",
-        "courses": []
-    },
-    {
-        "institution": "The Berlin School of Economics and Law",
-        "area": "Basics in Project Management",
-        "studyType": "",
-        "startDate": "2015-04-01",
-        "endDate": "2015-10-07",
-        "gpa": "1.7",
-        "courses": []
-    },
-    {
-        "institution": "J.N.Technological University Hyderabad",
-        "area": "Computer Science & Engineering",
-        "studyType": "B.Tech.",
-        "startDate": "2008-09-01",
-        "endDate": "2012-04-30",
-        "gpa": "2.7",
-        "courses": []
-    }],
+        {
+            "institution": "Technical Universitaet Berlin",
+            "area": "Computer Science",
+            "studyType": "M.Sc.",
+            "startDate": "2016-10-01",
+            "endDate": "2017-12-07",
+            "gpa": "2.2",
+            "courses": []
+        },
+        {
+            "institution": "Beuth University of Applied Sciences",
+            "area": "Qualifizierung fuer zugewanderte Akademiker/innen",
+            "studyType": "Beuth Bonus",
+            "startDate": "2016-09-29",
+            "endDate": "2017-05-30",
+            "gpa": "",
+            "courses": []
+        },
+        {
+            "institution": "The Berlin School of Economics and Law",
+            "area": "Basics in Project Management",
+            "studyType": "",
+            "startDate": "2015-04-01",
+            "endDate": "2015-10-07",
+            "gpa": "1.7",
+            "courses": []
+        },
+        {
+            "institution": "J.N.Technological University Hyderabad",
+            "area": "Computer Science & Engineering",
+            "studyType": "B.Tech.",
+            "startDate": "2008-09-01",
+            "endDate": "2012-04-30",
+            "gpa": "2.7",
+            "courses": []
+        }
+    ],
     "awards": [
-    {
-        "title": "Developer, and, publisher for Windows Phone application",
-        "date": "2012-03-01",
-        "awarder": "Nokia, Microsoft",
-        "summary": "Awarded Nokia Lumia 800 for publishing windows phone application as part of the competition I Unlock Joy"
-    },
-    {
-        "title": "Prototype designer of Windows Phone application",
-        "date": "2012-01-01",
-        "awarder": "Microsoft",
-        "summary": "Awarded an AMAZON gift voucher for designing a prototype of Windows Phone application"
-    },
-    {
-        "title": "Programmer in Visual Studio 2012",
-        "date": "2012-08-01",
-        "awarder": "Microsoft",
-        "summary": "Awarded two pen drives 8 GB each for quiz competition on Visual Studio 2012"
-    },
-    {
-        "title": "Developer, and Publisher for Windows 8 Application",
-        "date": "2012-09-01",
-        "awarder": "Microsoft",
-        "summary": "Awarded three e-commerce vouchers worth Rs.9500/- INR each of FlipKart Inc from Microsoft ReImagination Contest"
-    },
-    {
-        "title": "Golden Ticket Pass for AppsWorld Germany 2015",
-        "date": "2015-04-01",
-        "awarder": "BEMYAPP",
-        "summary": "Awarded Golden Ticket Pass worth 995 Euros/- for winning in the twitter contest"
-    }],
+        {
+            "title": "Developer, and, publisher for Windows Phone application",
+            "date": "2012-03-01",
+            "awarder": "Nokia, Microsoft",
+            "summary": "Awarded Nokia Lumia 800 for publishing windows phone application as part of the competition I Unlock Joy"
+        },
+        {
+            "title": "Prototype designer of Windows Phone application",
+            "date": "2012-01-01",
+            "awarder": "Microsoft",
+            "summary": "Awarded an AMAZON gift voucher for designing a prototype of Windows Phone application"
+        },
+        {
+            "title": "Programmer in Visual Studio 2012",
+            "date": "2012-08-01",
+            "awarder": "Microsoft",
+            "summary": "Awarded two pen drives 8 GB each for quiz competition on Visual Studio 2012"
+        },
+        {
+            "title": "Developer, and Publisher for Windows 8 Application",
+            "date": "2012-09-01",
+            "awarder": "Microsoft",
+            "summary": "Awarded three e-commerce vouchers worth Rs.9500/- INR each of FlipKart Inc from Microsoft ReImagination Contest"
+        },
+        {
+            "title": "Golden Ticket Pass for AppsWorld Germany 2015",
+            "date": "2015-04-01",
+            "awarder": "BEMYAPP",
+            "summary": "Awarded Golden Ticket Pass worth 995 Euros/- for winning in the twitter contest"
+        }
+    ],
     "publications": [
-    {
-        "name": "Speech Processing, Speech Synthesis & Speech Recognition",
-        "publisher": "Yuva Engineers",
-        "releaseDate": "2010-05-01",
-        "website": "http://www.yuvaengineers.com/speech-processing-speech-synthesis-speech-recognition-s-akarsh-k-avinash",
-        "summary": "Speech recognition is an input system that consists of a microphone and speech recognition software. Speech recognition software is complex. Sounds received via a microphone must be broken down into phonemes; then, a “best guess” algorithm is used to match phonemes and syllables to a database of possible words. To solve speech inconsistencies like accent, volume, pitch, and inflection, male vs. female, sarcasm, and colloquialisms, the software must examine context and word patterns to determine the correct meaning. This requires an enormous database, which in turn requires a computer with very capable processing speed and memory. Speech recognition will greatly change the way information is input. Ease, convenience, and speed are three advantages to using a microphone instead of a keyboard. Speech recognition technology will have an impact on all careers but especially education. Business Education teachers must stay abreast of this technology and be willing to adjust their courses to best prepare students."
-    }],
+        {
+            "name": "Speech Processing, Speech Synthesis & Speech Recognition",
+            "publisher": "Yuva Engineers",
+            "releaseDate": "2010-05-01",
+            "website": "http://www.yuvaengineers.com/speech-processing-speech-synthesis-speech-recognition-s-akarsh-k-avinash",
+            "summary": "Speech recognition is an input system that consists of a microphone and speech recognition software. Speech recognition software is complex. Sounds received via a microphone must be broken down into phonemes; then, a “best guess” algorithm is used to match phonemes and syllables to a database of possible words. To solve speech inconsistencies like accent, volume, pitch, and inflection, male vs. female, sarcasm, and colloquialisms, the software must examine context and word patterns to determine the correct meaning. This requires an enormous database, which in turn requires a computer with very capable processing speed and memory. Speech recognition will greatly change the way information is input. Ease, convenience, and speed are three advantages to using a microphone instead of a keyboard. Speech recognition technology will have an impact on all careers but especially education. Business Education teachers must stay abreast of this technology and be willing to adjust their courses to best prepare students."
+        }
+    ],
     "skills": [
-    {
-        "name": "Programmier- und Skriptsprachen",
-        "level": "",
-        "keywords": [
-            "HTML",
-            "CSS",
-            "jQuery",
-            "Java",
-            "JavaScript",
-            "Swift"
-        ]
-    },
-    {
-        "name": "Datenbank",
-        "level": "",
-        "keywords": [
-            "SQL (MySQL, PostgreSQL)",
-            "NoSQL (MongoDB, Redis, Neo4j)"
-        ]
-    },
-    {
-        "name": "Projektmanagement-Methodik",
-        "level": "",
-        "keywords": [
-            "Scrum",
-            "Agile"
-        ]
-    },
-    {
-        "name": "Versionskontrollsystem",
-        "level": "",
-        "keywords": [
-            "Git",
-            "GitHub",
-            "GitLab"
-        ]
-    },
-    {
-        "name": "IDE",
-        "level": "",
-        "keywords": [
-            "Xcode",
-            "Android Studio",
-            "Eclipse"
-        ]
-    },
-    {
-        "name": "Continuous Integration",
-        "level": "",
-        "keywords": [
-            "Jenkins",
-            "GitLab CI",
-            "Docker CI"
-        ]
-    },
-    {
-        "name": "Betriebssystem",
-        "level": "",
-        "keywords": [
-            "macOS",
-            "Linux",
-            "Windows"
-        ]
-    },
-    {
-        "name": "Software / Anwendungen",
-        "level": "",
-        "keywords": [
-            "JIRA",
-            "Confluence",
-            "Wiki",
-            "Slack",
-            "MS Office",
-            "DBeaver",
-            "HappyFox",
-            "Adobe Photoshop",
-            "GIMP",
-            "Charles Proxy"
-        ]
-    }],
+        {
+            "name": "Programmier- und Skriptsprachen",
+            "level": "",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "jQuery",
+                "Java",
+                "JavaScript",
+                "Swift"
+            ]
+        },
+        {
+            "name": "Datenbank",
+            "level": "",
+            "keywords": [
+                "SQL (MySQL, PostgreSQL)",
+                "NoSQL (MongoDB, Redis, Neo4j)"
+            ]
+        },
+        {
+            "name": "Projektmanagement-Methodik",
+            "level": "",
+            "keywords": [
+                "Scrum",
+                "Agile"
+            ]
+        },
+        {
+            "name": "Versionskontrollsystem",
+            "level": "",
+            "keywords": [
+                "Git",
+                "GitHub",
+                "GitLab"
+            ]
+        },
+        {
+            "name": "IDE",
+            "level": "",
+            "keywords": [
+                "Xcode",
+                "Android Studio",
+                "Eclipse"
+            ]
+        },
+        {
+            "name": "Continuous Integration",
+            "level": "",
+            "keywords": [
+                "Jenkins",
+                "GitLab CI",
+                "Docker CI"
+            ]
+        },
+        {
+            "name": "Betriebssystem",
+            "level": "",
+            "keywords": [
+                "macOS",
+                "Linux",
+                "Windows"
+            ]
+        },
+        {
+            "name": "Software / Anwendungen",
+            "level": "",
+            "keywords": [
+                "JIRA",
+                "Confluence",
+                "Wiki",
+                "Slack",
+                "MS Office",
+                "DBeaver",
+                "HappyFox",
+                "Adobe Photoshop",
+                "GIMP",
+                "Charles Proxy"
+            ]
+        }
+    ],
     "languages": [
-    {
-        "language": "Englisch",
-        "fluency": "Muttersprache"
-    },
-    {
-        "language": "German",
-        "fluency": "Gute Kenntnisse"
-    },
-    {
-        "language": "Telugu",
-        "fluency": "Muttersprache"
-    }],
+        {
+            "language": "Englisch",
+            "fluency": "Muttersprache"
+        },
+        {
+            "language": "German",
+            "fluency": "Gute Kenntnisse"
+        },
+        {
+            "language": "Telugu",
+            "fluency": "Muttersprache"
+        }
+    ],
     "interests": [
         {
             "name": "Dance",
             "keywords": [
-              "Swing",
-              "Lindy Hop",
-              "Lindy Charleston"
+                "Swing",
+                "Lindy Hop",
+                "Lindy Charleston"
             ]
         },
         {
@@ -417,8 +436,9 @@
         {
             "name": "Jogging",
             "keywords": []
-        }],
-        "references": [
+        }
+    ],
+    "references": [
         {
             "name": "Prathap Reddy",
             "reference": "Akarsh is very good team member and he always try to adopt to new technologies especially i like his dedication in work"
@@ -438,5 +458,6 @@
         {
             "name": "Victor Castano",
             "reference": "In a nutshell, Akarsh is one of the success stories at Fyber. He started as a Student Solution Engineer and quickly become an essential part of the team. Akarsh has a solid academic background, is very technical and customer oriented. With a wide mobile development background, Akarsh would be an asset to any organisation looking for a loyal and motivated engineer."
-        }]
+        }
+    ]
 }
