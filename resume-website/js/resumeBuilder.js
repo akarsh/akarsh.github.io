@@ -10,7 +10,7 @@ var bio = {
     "xing": "Akarsh_Seggemu",
     "location": "Berlin, Germany"
   },
-  "biopic": "images/standard_profile.jpg",
+  "biopic": "images/standard_image.png",
   "welcomeMessage": "Self-taught Application developer (i.e. Windows Phone, Windows 8, Android), specializing in native apps. Ever since I built my first Windows Phone app during final year of my Bachelor studies(i.e. Computer Science & Engineering), I have a passion for developing apps that stay in align with mobile usability guidelines.",
   "skills": ["HTML", "CSS", "JavaScript", "Java", "Node.JS", "SQL", "NOSQL", "JQuery", "Git"]
 };
