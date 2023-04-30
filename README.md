@@ -12,7 +12,7 @@ This repository includes the following files:
 * **js/jQuery.js**: The jQuery library.
 * **css/style.css**: Contains all of the CSS needed to style the page.
 * **README.md**: The GitHub readme file.
-* **images/standard_profile.jpg**: Profile picture of Akarsh Seggemu.
+* **images/standard_image.png**: Profile picture of Akarsh Seggemu.
 
 ## Credits
 
