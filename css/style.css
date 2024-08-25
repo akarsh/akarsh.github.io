@@ -8,6 +8,27 @@
   padding-top: 50px;
 }
 
+#btn-dark-and-light-mode {
+  all: unset;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  div {
+    background-color: black;
+  }
+  nav {
+    background-color: black;
+  }
+  li {
+    background-color: black;
+  }
+}
+
+
 img {
   height: 120px;
   width: 120px;
