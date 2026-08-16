@@ -1,48 +1,48 @@
+const root = document.documentElement;
+const themeButton = document.getElementById("btn-dark-and-light-mode");
 const lightIcon = document.getElementById("light-icon");
 const darkIcon = document.getElementById("dark-icon");
-const darkModeMediaQuery = window.matchMedia(
-    "(prefers-color-scheme: dark)"
-);
+const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-let darkMode =
-    localStorage.getItem("dark-mode") ?? darkModeMediaQuery.matches;
-
-if (darkMode) {
-    document.body.classList.add("dark-mode");
-    lightIcon.style.display = "block";
-    darkIcon.style.display = "none";
-} else {
-    lightIcon.style.display = "none";
-    darkIcon.style.display = "block";
+function preferredTheme() {
+    return localStorage.getItem("theme") ??
+        (darkModeMediaQuery.matches ? "dark" : "light");
 }
 
-darkModeMediaQuery.addEventListener("change", (e) => {
-    if (e.matches) {
-        darkMode = true;
-    } else {
-        darkMode = false;
-    }
-    document.body.classList.toggle("dark-mode");
+function applyTheme(theme) {
+    const isDark = theme === "dark";
+    root.setAttribute("data-bs-theme", theme);
+    lightIcon.hidden = !isDark;
+    darkIcon.hidden = isDark;
+    themeButton.setAttribute("aria-pressed", String(isDark));
+    themeButton.setAttribute(
+        "aria-label",
+        `Switch to ${isDark ? "light" : "dark"} theme`
+    );
+}
 
-    if (darkMode) {
-        lightIcon.style.display = "block";
-        darkIcon.style.display = "none";
-    } else {
-        lightIcon.style.display = "none";
-        darkIcon.style.display = "block";
+applyTheme(preferredTheme());
+
+themeButton.addEventListener("click", () => {
+    const nextTheme = root.getAttribute("data-bs-theme") === "dark"
+        ? "light"
+        : "dark";
+    localStorage.setItem("theme", nextTheme);
+    applyTheme(nextTheme);
+});
+
+darkModeMediaQuery.addEventListener("change", (event) => {
+    if (!localStorage.getItem("theme")) {
+        applyTheme(event.matches ? "dark" : "light");
     }
 });
 
-function toggleDarkMode() {
-    darkMode = !darkMode;
-    localStorage.setItem("dark-mode", darkMode);
-    document.body.classList.toggle("dark-mode");
+document.getElementById("current-year").textContent = new Date().getFullYear();
 
-    if (darkMode) {
-        lightIcon.style.display = "block";
-        darkIcon.style.display = "none";
-    } else {
-        lightIcon.style.display = "none";
-        darkIcon.style.display = "block";
-    }
-}
+document.querySelectorAll("#navbar-content .nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+        const navbar = document.getElementById("navbar-content");
+        const collapse = bootstrap.Collapse.getInstance(navbar);
+        collapse?.hide();
+    });
+});

@@ -1,425 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-  <!--<![endif]-->
-
+<!doctype html>
+<html lang="en" data-bs-theme="light">
   <head>
-    <!-- This tells the browser how to read the document. -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akarsh SEGGEMU</title>
-    <!-- Load the page styles. -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio of Akarsh Seggemu, an IT technical team lead and software engineer." />
+    <title>Akarsh Seggemu | IT Technical Team Lead</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://use.fontawesome.com" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <script src="index.js" defer></script>
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome -->
-    <link
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      rel="stylesheet"
-    />
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
+  <body data-bs-spy="scroll" data-bs-target="#site-navigation" data-bs-root-margin="0px 0px -70%">
+    <nav id="site-navigation" class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom" aria-label="Main navigation">
       <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Akarsh SEGGEMU</a>
+        <a class="navbar-brand fw-bold" href="#home">AS<span class="brand-dot">.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar-content" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item ms-lg-2">
+              <button id="btn-dark-and-light-mode" class="btn btn-outline-secondary rounded-circle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+                <i id="light-icon" class="fas fa-sun" aria-hidden="true"></i>
+                <i id="dark-icon" class="fas fa-moon" aria-hidden="true"></i>
+              </button>
+            </li>
+          </ul>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active">
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <button id="btn-dark-and-light-mode" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
-              <svg width="30" height="30" id="light-icon" aria-hidden="true">
-                <circle cx="15" cy="15" r="6" fill="currentColor" />
-
-                <line
-                  id="ray"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  x1="15"
-                  y1="1"
-                  x2="15"
-                  y2="4"
-                ></line>
-
-                <use href="#ray" transform="rotate(45 15 15)" />
-                <use href="#ray" transform="rotate(90 15 15)" />
-                <use href="#ray" transform="rotate(135 15 15)" />
-                <use href="#ray" transform="rotate(180 15 15)" />
-                <use href="#ray" transform="rotate(225 15 15)" />
-                <use href="#ray" transform="rotate(270 15 15)" />
-                <use href="#ray" transform="rotate(315 15 15)" />
-              </svg>
-              <svg width="30" height="30" id="dark-icon" aria-hidden="true">
-                <path
-                  fill="currentColor"
-                  d="M 23, 5
-                      A 12 12 0 1 0 23, 25
-                      A 12 12 0 0 1 23, 5"
-                />
-              </svg>
-            </button>
-          </li>
-        </ul>
       </div>
     </nav>
 
-    <!-- About section -->
-    <div id="about" class="container">
-      <div class="page-header">
-        <h3>About</h3>
-      </div>
-      <div class="media">
-        <div class="media-body">
-          <div class="col-md-offset-1 well text-justify">
-            <p>
-              Ever since I developed my first Windows Phone App during the final
-              year of my Bachelor studies (i.e. Computer Science &amp;
-              Engineering) in 2011, I have a passion for developing user-centric
-              Apps following web and mobile usability guidelines.
-            </p>
-            <p>
-              In December 2017, I graduated with a master's degree in (M.Sc.)
-              Computer Science from Technische Universitaet Berlin where I
-              researched various topics that helped me to focus on creating
-              human-centric software. My master's thesis title is "Review on
-              continuous integration in mobile development." I helped by
-              creating automation of mobile testing for quality assurance
-              engineers by automating the installation of artefacts on the
-              mobile device under test using the PR id from GitLab API. I shared
-              my understanding from my research on how advancements in project
-              management methodology from XP to Agile from the late 1999s to
-              2016 increased the productivity of software development teams and
-              reduced the release of product time to market. For my research
-              work, I was awarded with grade 1,7 (gut) according to
-              <a
-                href="https://www.tu.berlin/en/logistik/studying/during-the-course-of-study/examinations"
-                >German university grading scales</a
-              >.
-            </p>
-            <p>
-              Currently, I work as IT Technical Team Lead initiating, developing
-              and implementing strategies on internal/external software to
-              improve the operational process and overall productivity of
-              different teams in the organization and working on people
-              management skills by conducting 1:1, performance reviews, hiring,
-              mentoring and coaching of software engineers, quality assurance
-              engineers and DevOps engineers. I have experience performing SCRUM
-              and KANBAN ceremonies (standup, sprint review, sprint planning,
-              retrospective) and building delivery plans.
-            </p>
-            <p>
-              Previous experience as Software Engineer - Mobile, specializing in
-              native and cross-platform mobile apps written in C#, Kotlin, Java,
-              Objective-C, Swift. Created apps following the human interface
-              design guidelines with distinct branding of different mobile
-              operating systems such as Windows Phone, Windows 8, Android, iOS.
-            </p>
-          </div>
-          <div class="col-md-offset-1 well well-sm text-center">
-            IT Team Lead with an experience of 10+ years
+    <main>
+      <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container py-5">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7 order-2 order-lg-1">
+              <p class="eyebrow mb-3">IT Technical Team Lead · Software Engineer</p>
+              <h1 class="display-3 fw-bold lh-sm mb-4">Building capable teams and human-centered software.</h1>
+              <p class="lead text-body-secondary mb-4 hero-copy">I lead multidisciplinary engineering teams and turn complex operational problems into dependable software products.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-primary btn-lg" href="#portfolio">Explore my work</a>
+                <a class="btn btn-outline-secondary btn-lg" href="#experience">Download résumé</a>
+              </div>
+            </div>
+            <div class="col-lg-5 order-1 order-lg-2 text-center">
+              <div class="portrait-wrap mx-auto">
+                <img class="portrait img-fluid rounded-circle" src="images/standard_image.png" alt="Akarsh Seggemu" width="360" height="360" />
+              </div>
+            </div>
           </div>
         </div>
-        <div class="media-right">
-          <img
-            class="img-rounded"
-            alt="picture of akarsh seggemu"
-            src="images/standard_image.png"
-          />
-        </div>
-      </div>
+      </section>
 
-      <!-- Work Experience section -->
-      <div class="page-header">
-        <h3>Résumé</h3>
-      </div>
-        <div class="row">
-          <div class="col-md-offset-1 col-md-8">
-            <a
-              class="btn btn-default btn-md btn-primary"
-              role="button"
-              href="resumes/akarshSeggemu_Resume_DE.pdf"
-              download="akarshSeggemu_Resume_DE.pdf"
-            >
-              <i class="fas fa-download fa-2x"></i> &nbsp; &nbsp; Résumé in
-              German
-              <i class="fas fa-file-pdf fa-1x"></i>
-            </a>
-            <br />
-            <br />
-            <a
-              class="btn btn-default btn-md btn-primary"
-              role="button"
-              href="resumes/akarshSeggemu_Resume_EN.pdf"
-              download="akarshSeggemu_Resume_EN.pdf"
-            >
-              <i class="fas fa-download fa-2x"></i> &nbsp; &nbsp; Résumé in
-              English
-              <i class="fas fa-file-pdf fa-1x"></i>
-            </a>
+      <section id="about" class="section-space">
+        <div class="container">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-4">
+              <p class="eyebrow">About</p>
+              <h2 class="display-6 fw-bold">Technology works best when it works for people.</h2>
+            </div>
+            <div class="col-lg-8">
+              <p class="lead">My path began with a Windows Phone app in 2011 and grew through native and cross-platform mobile development into technical leadership.</p>
+              <p class="text-body-secondary">Today I initiate and deliver strategies that improve operational processes and team productivity. I lead software, quality assurance, and DevOps engineers through hiring, mentoring, coaching, one-to-ones, and performance development. My engineering background spans C#, Kotlin, Java, Objective-C, and Swift across Windows, Android, and iOS.</p>
+              <p class="text-body-secondary mb-0">I earned an M.Sc. in Computer Science from Technische Universität Berlin, where my research focused on continuous integration in mobile development and automation for quality assurance teams.</p>
+              <div class="row g-3 mt-4" aria-label="Career highlights">
+                <div class="col-sm-4"><div class="stat-card"><strong>10+</strong><span>Years in technology</span></div></div>
+                <div class="col-sm-4"><div class="stat-card"><strong>4</strong><span>Mobile platforms</span></div></div>
+                <div class="col-sm-4"><div class="stat-card"><strong>M.Sc.</strong><span>Computer Science</span></div></div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Portfolio section -->
-    <div id="portfolio" class="container">
-      <div class="page-header">
-        <h3>Portfolio</h3>
-      </div>
-      <div class="row">
-        <div class="col-md-offset-1 col-md-4">
-          <h4>
-            Mobile development projects on
-            <i class="fab fa-github fa-2x" aria-hidden="true"></i> GitHub
-          </h4>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a
-                href="https://github.com/akarsh/ios-akarsh-seggemu-resume"
-                target="_blank"
-              >
-                <i class="fas fa-file-alt fa-1x"></i> ios-akarsh-seggemu-resume
-              </a>
-              <p>
-                iOS resume application that follows schema of
-                https://jsonresume.org/ to parse the JSON resume file and shows
-                the resume in an iOS application.
-              </p>
-            </li>
-            <li class="list-group-item">
-              <a
-                href="https://github.com/akarsh/android-akarsh-seggemu-resume"
-                target="_blank"
-              >
-                <i class="fas fa-file-alt fa-1x"></i>
-                android-akarsh-seggemu-resume
-              </a>
-              <p>
-                Android resume application that follows schema of
-                https://jsonresume.org/ to parse the JSON resume file and shows
-                the resume in an Android application.
-              </p>
-            </li>
-            <li class="list-group-item">
-              <a
-                href="https://github.com/akarsh/osmdroid-sample-android-studio-app"
-                target="_blank"
-              >
-                <i class="fas fa-file-alt fa-1x"></i>
-                osmdroid-sample-android-studio-app
-              </a>
-              <p>
-                This project implements the osmdroid library with slight
-                modifications of all features in a Android appliciation.
-              </p>
-            </li>
-          </ul>
+      <section id="experience" class="section-space bg-body-tertiary">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-7">
+              <p class="eyebrow">Experience</p>
+              <h2 class="display-6 fw-bold mb-4">Leadership grounded in engineering.</h2>
+              <div class="timeline ps-4">
+                <div class="timeline-item pb-4"><h3 class="h5 mb-1">IT Technical Team Lead</h3><p class="text-body-secondary mb-0">Strategy, delivery planning, people leadership, and cross-functional engineering operations.</p></div>
+                <div class="timeline-item"><h3 class="h5 mb-1">Software Engineer · Mobile</h3><p class="text-body-secondary mb-0">Human-interface-driven native and cross-platform applications across major mobile ecosystems.</p></div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="card resume-card border-0 shadow-sm">
+                <div class="card-body p-4 p-md-5">
+                  <div class="icon-tile mb-4"><i class="fas fa-file-pdf" aria-hidden="true"></i></div>
+                  <h3 class="h4">Résumé</h3>
+                  <p class="text-body-secondary">Download the detailed version in your preferred language.</p>
+                  <div class="d-grid gap-3">
+                    <a class="btn btn-primary" href="resumes/akarshSeggemu_Resume_EN.pdf" download><i class="fas fa-download me-2" aria-hidden="true"></i>English résumé</a>
+                    <a class="btn btn-outline-primary" href="resumes/akarshSeggemu_Resume_DE.pdf" download><i class="fas fa-download me-2" aria-hidden="true"></i>German résumé</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-offset-1 col-md-4">
-          <h4>
-            Front-end web development projects on
-            <i class="fab fa-github fa-2x" aria-hidden="true"></i> GitHub
-          </h4>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a
-                href="https://github.com/akarsh/GitLab-API-Implementation"
-                target="_blank"
-              >
-                <i class="fas fa-file-alt fa-1x"></i> GitLab-API-Implementation
-              </a>
-              <p>
-                This project demonstrates, how to integrate gitlab api and
-                abdkit library in a simple website application using nodejs.
-              </p>
-            </li>
-            <li class="list-group-item">
-              <a
-                href="https://github.com/akarsh/frontend-nanodegree-resume"
-                target="_blank"
-              >
-                <i class="fas fa-file-alt fa-1x"></i> Resume project
-              </a>
-              <p>
-                This project is built following the udacity course: JavaScript
-                Basics, course code: 804. Where the resume data is stored in
-                JavaScript objects.
-              </p>
-            </li>
-            <li class="list-group-item">
-              <a href="https://github.com/akarsh/TUPJNOSQL17" target="_blank">
-                <i class="fas fa-file-alt fa-1x"></i> TUPJNOSQL17
-              </a>
-              <p>
-                TU project NoSQL 2017 demonstrates the implementation of 3 NoSQL
-                databases.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-offset-1 col-md-4">
-          <h4>
-            Other projects on
-            <i class="fab fa-github fa-2x" aria-hidden="true"></i> GitHub
-          </h4>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a
-                href="https://github.com/akarsh/test-for-moneo"
-                target="_blank"
-              >
-                <i class="fas fa-file-alt fa-1x"></i> test-for-moneo</a
-              >
-              <p>
-                Tutorial on how to implement the moneo plugin / middleware for
-                Mongoose to Neo4j.
-              </p>
-            </li>
-            <li class="list-group-item">
-              <a href="https://github.com/akarsh/lightress" target="_blank">
-                <i class="fas fa-file-alt fa-1x"></i> lightress</a
-              >
-              <p>
-                Integration of Intel Edison Arduino with Polar Heart rate
-                transmitter &amp; receiver, Philips Hue.
-              </p>
-            </li>
-            <li class="list-group-item">
-              <a
-                href="https://github.com/akarsh/osmtogeojson-nodejs-server-tutorial"
-                target="_blank"
-              >
-                <i class="fas fa-file-alt fa-1x"></i>
-                osmtogeojson-nodejs-server-tutorial</a
-              >
-              <p>Tutorial for osmtogeojson-nodejs-server.</p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-offset-1 col-md-4">
-          <h4>
-            Contributed open source projects on
-            <i class="fab fa-github fa-2x" aria-hidden="true"></i> GitHub
-          </h4>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="https://github.com/opensciencemap/vtm" target="_blank">
-                <i class="fas fa-file-alt fa-1x"></i> vtm
-              </a>
-              <p>
-                a vector-tile map library written in java - running on android,
-                desktop and within the browser
-              </p>
-            </li>
-            <li class="list-group-item">
-              <a href="https://github.com/TU-Berlin-CVRS/uipf" target="_blank">
-                <i class="fas fa-file-alt fa-1x"></i> uipf
-              </a>
-              <p>A Unified Image Processing Framework</p>
-            </li>
-            <li class="list-group-item">
-              <a
-                href="https://github.com/Swift-Dev-Ninjas/swift-dev-ninjas.github.io"
-                target="_blank"
-              >
-                <i class="fas fa-file-alt fa-1x"></i> swift-dev-ninjas.github.io
-              </a>
-              <p>Website for the meetup https://swift-dev-ninjas.github.io.</p>
-            </li>
-            <li class="list-group-item">
-              <a
-                href="https://github.com/gdg-berlin-android/gdg-berlin-android.github.io"
-                target="_blank"
-              >
-                <i class="fas fa-file-alt fa-1x"></i>
-                gdg-berlin-android.github.io
-              </a>
-              <p>Website to GDG Berlin Android http://berlindroid.de/</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Contact section -->
-    <div id="contact" class="container">
-      <div class="page-header">
-        <h3>Contact</h3>
-      </div>
-      <div class="row">
-        <div class="col-md-offset-1 col-md-3">
-          <p>Email: sakarshkumar[at]gmail[dot]com</p>
-          <p>Mobile: +49 1575 241 7519</p>
+      <section id="portfolio" class="section-space">
+        <div class="container">
+          <div class="row align-items-end mb-5 g-3">
+            <div class="col-lg-8"><p class="eyebrow">Selected work</p><h2 class="display-6 fw-bold mb-0">Projects built to explore, teach, and contribute.</h2></div>
+            <div class="col-lg-4 text-lg-end"><a class="link-arrow" href="https://github.com/akarsh" target="_blank" rel="noopener noreferrer">View GitHub profile <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col"><article class="card project-card h-100"><div class="card-body p-4"><span class="badge text-bg-primary mb-3">iOS</span><h3 class="h5">iOS Resume</h3><p class="text-body-secondary">A native résumé application that parses JSON Resume data and presents it with an iOS-first interface.</p><a class="stretched-link" href="https://github.com/akarsh/ios-akarsh-seggemu-resume" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div></article></div>
+            <div class="col"><article class="card project-card h-100"><div class="card-body p-4"><span class="badge text-bg-success mb-3">Android</span><h3 class="h5">Android Resume</h3><p class="text-body-secondary">An Android résumé application powered by the portable JSON Resume schema.</p><a class="stretched-link" href="https://github.com/akarsh/android-akarsh-seggemu-resume" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div></article></div>
+            <div class="col"><article class="card project-card h-100"><div class="card-body p-4"><span class="badge text-bg-info mb-3">Maps</span><h3 class="h5">osmdroid Sample</h3><p class="text-body-secondary">A practical Android Studio implementation demonstrating the osmdroid library and its features.</p><a class="stretched-link" href="https://github.com/akarsh/osmdroid-sample-android-studio-app" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div></article></div>
+            <div class="col"><article class="card project-card h-100"><div class="card-body p-4"><span class="badge text-bg-warning mb-3">Node.js</span><h3 class="h5">GitLab API Implementation</h3><p class="text-body-secondary">A focused example of integrating the GitLab API and ABDKit in a Node.js web application.</p><a class="stretched-link" href="https://github.com/akarsh/GitLab-API-Implementation" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div></article></div>
+            <div class="col"><article class="card project-card h-100"><div class="card-body p-4"><span class="badge text-bg-secondary mb-3">IoT</span><h3 class="h5">Lightress</h3><p class="text-body-secondary">An Intel Edison and Arduino experiment connecting Polar heart-rate hardware with Philips Hue.</p><a class="stretched-link" href="https://github.com/akarsh/lightress" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div></article></div>
+            <div class="col"><article class="card project-card h-100"><div class="card-body p-4"><span class="badge text-bg-dark mb-3">Open source</span><h3 class="h5">VTM</h3><p class="text-body-secondary">Contributions to a vector-tile map library for Android, desktop, and browser environments.</p><a class="stretched-link" href="https://github.com/opensciencemap/vtm" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div></article></div>
+          </div>
         </div>
-        <div class="col-md-4 text-center">
-          <h4>About this web page</h4>
-          <p>
-            Made with <i class="fas fa-heart" aria-hidden="true"></i> by
-            <a href="https://akarsh.github.io/" target="_blank"
-              >Akarsh Seggemu</a
-            >
-          </p>
-        </div>
-        <div class="col-md-4 text-center">
-          <h4>Around the web</h4>
-          <a href="https://twitter.com/akarshseggemu" target="_blank">
-            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/akarsh" target="_blank">
-            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/akarshseggemu" target="_blank">
-            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- footer section -->
-    <footer class="footer">
-      <div class="panel-footer container text-center">
-        <span class="text-muted">
-          Akarsh SEGGEMU © 2017 - 2025. All Rights Reserved.
-        </span>
-      </div>
+      <section id="contact" class="section-space contact-section">
+        <div class="container text-center">
+          <p class="eyebrow">Contact</p>
+          <h2 class="display-5 fw-bold">Let’s build something useful.</h2>
+          <p class="lead text-body-secondary mx-auto mb-4 contact-copy">I’m always interested in thoughtful conversations about engineering leadership, mobile products, and effective teams.</p>
+          <a class="btn btn-primary btn-lg" href="mailto:sakarshkumar@gmail.com">Start a conversation</a>
+          <div class="social-links d-flex justify-content-center gap-3 mt-4" aria-label="Social profiles">
+            <a href="https://github.com/akarsh" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/akarshseggemu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/akarshseggemu" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-top py-4">
+      <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2 text-body-secondary small"><span>Akarsh Seggemu</span><span>© 2017–<span id="current-year"></span>. All rights reserved.</span></div>
     </footer>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
-      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
