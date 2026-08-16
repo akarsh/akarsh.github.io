@@ -14,13 +14,13 @@
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
       crossorigin="anonymous"
     />
     <!-- Font Awesome -->
     <link
-      href="https://use.fontawesome.com/releases/v5.0.3/css/all.css"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       rel="stylesheet"
     />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -49,8 +49,8 @@
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <button id="btn-dark-and-light-mode" onclick="toggleDarkMode()">
-              <svg width="30" height="30" id="light-icon">
+            <button id="btn-dark-and-light-mode" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+              <svg width="30" height="30" id="light-icon" aria-hidden="true">
                 <circle cx="15" cy="15" r="6" fill="currentColor" />
 
                 <line
@@ -72,7 +72,7 @@
                 <use href="#ray" transform="rotate(270 15 15)" />
                 <use href="#ray" transform="rotate(315 15 15)" />
               </svg>
-              <svg width="30" height="30" id="dark-icon">
+              <svg width="30" height="30" id="dark-icon" aria-hidden="true">
                 <path
                   fill="currentColor"
                   d="M 23, 5
@@ -149,10 +149,12 @@
             src="images/standard_image.png"
           />
         </div>
-        <!-- Work Experience section -->
-        <div class="page-header">
-          <h3>Résumé</h3>
-        </div>
+      </div>
+
+      <!-- Work Experience section -->
+      <div class="page-header">
+        <h3>Résumé</h3>
+      </div>
         <div class="row">
           <div class="col-md-offset-1 col-md-8">
             <a
@@ -408,17 +410,16 @@
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <!-- Font Awesome -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
     ></script>
   </body>
 </html>
