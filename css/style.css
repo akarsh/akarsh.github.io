@@ -17,17 +17,13 @@
 .dark-mode {
   background-color: black;
   color: white;
-  div {
-    background-color: black;
-  }
-  nav {
-    background-color: black;
-  }
-  li {
-    background-color: black;
-  }
 }
 
+.dark-mode div,
+.dark-mode nav,
+.dark-mode li {
+  background-color: black;
+}
 
 img {
   height: 120px;

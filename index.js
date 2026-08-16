@@ -9,9 +9,11 @@ let darkMode =
 
 if (darkMode) {
     document.body.classList.add("dark-mode");
-    darkIcon.setAttribute("display", "none");
+    lightIcon.style.display = "block";
+    darkIcon.style.display = "none";
 } else {
-    lightIcon.setAttribute("display", "none");
+    lightIcon.style.display = "none";
+    darkIcon.style.display = "block";
 }
 
 darkModeMediaQuery.addEventListener("change", (e) => {
@@ -23,11 +25,11 @@ darkModeMediaQuery.addEventListener("change", (e) => {
     document.body.classList.toggle("dark-mode");
 
     if (darkMode) {
-        lightIcon.setAttribute("display", "block");
-        darkIcon.setAttribute("display", "none");
+        lightIcon.style.display = "block";
+        darkIcon.style.display = "none";
     } else {
-        lightIcon.setAttribute("display", "none");
-        darkIcon.setAttribute("display", "block");
+        lightIcon.style.display = "none";
+        darkIcon.style.display = "block";
     }
 });
 
@@ -37,10 +39,10 @@ function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
 
     if (darkMode) {
-        lightIcon.setAttribute("display", "block");
-        darkIcon.setAttribute("display", "none");
+        lightIcon.style.display = "block";
+        darkIcon.style.display = "none";
     } else {
-        lightIcon.setAttribute("display", "none");
-        darkIcon.setAttribute("display", "block");
+        lightIcon.style.display = "none";
+        darkIcon.style.display = "block";
     }
 }

@@ -49,8 +49,8 @@
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <button id="btn-dark-and-light-mode" onclick="toggleDarkMode()">
-              <svg width="30" height="30" id="light-icon">
+            <button id="btn-dark-and-light-mode" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+              <svg width="30" height="30" id="light-icon" aria-hidden="true">
                 <circle cx="15" cy="15" r="6" fill="currentColor" />
 
                 <line
@@ -72,7 +72,7 @@
                 <use href="#ray" transform="rotate(270 15 15)" />
                 <use href="#ray" transform="rotate(315 15 15)" />
               </svg>
-              <svg width="30" height="30" id="dark-icon">
+              <svg width="30" height="30" id="dark-icon" aria-hidden="true">
                 <path
                   fill="currentColor"
                   d="M 23, 5
@@ -149,10 +149,12 @@
             src="images/standard_image.png"
           />
         </div>
-        <!-- Work Experience section -->
-        <div class="page-header">
-          <h3>Résumé</h3>
-        </div>
+      </div>
+
+      <!-- Work Experience section -->
+      <div class="page-header">
+        <h3>Résumé</h3>
+      </div>
         <div class="row">
           <div class="col-md-offset-1 col-md-8">
             <a
