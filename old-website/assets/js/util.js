@@ -6,7 +6,7 @@
 	 */
 	$.fn.navList = function() {
 
-		var	$this = $(this);
+		var	$this = $(this),
 			$a = $this.find('a'),
 			b = [];
 
@@ -40,6 +40,7 @@
 	 * @return {jQuery} jQuery object.
 	 */
 	$.fn.panel = function(userConfig) {
+		var $this = $(this);
 
 		// No elements?
 			if (this.length == 0)
@@ -56,8 +57,7 @@
 			}
 
 		// Vars.
-			var	$this = $(this),
-				$body = $('body'),
+			var	$body = $('body'),
 				$window = $(window),
 				id = $this.attr('id'),
 				config;
@@ -95,7 +95,7 @@
 			}, userConfig);
 
 			// Expand "target" if it's not a jQuery object already.
-				if (typeof config.target != 'jQuery')
+				if (!(config.target instanceof $))
 					config.target = $(config.target);
 
 		// Panel.
@@ -301,6 +301,7 @@
 	 * @return {jQuery} jQuery object.
 	 */
 	$.fn.placeholder = function() {
+		var $this = $(this);
 
 		// Browser natively supports placeholders? Bail.
 			if (typeof (document.createElement('input')).placeholder != 'undefined')
@@ -321,8 +322,6 @@
 			}
 
 		// Vars.
-			var $this = $(this);
-
 		// Text, TextArea.
 			$this.find('input[type=text],textarea')
 				.each(function() {
