@@ -12,6 +12,10 @@ This website uses the HTML5 template "Stellar" by HTML5 UP, customized for this 
 
 Bootstrap remains on its final 3.x release because the legacy markup uses Bootstrap 3 dropdown classes. Font Awesome, Scrollex, Scrolly, and Skel are retained at the versions bundled with the Stellar template to avoid breaking its icon font and scrolling behavior.
 
+#### Browser support
+
+The site-owned JavaScript uses modern `let`, strict comparisons, and current keyboard/property APIs. Obsolete IE8/IE9 conditional polyfills have been removed. The visual design and template animations remain unchanged for current Chrome, Edge, Firefox, and Safari releases.
+
 #### Credits:
 
     Template:
