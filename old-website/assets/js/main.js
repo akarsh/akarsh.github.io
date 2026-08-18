@@ -46,6 +46,36 @@
 			let $nav = $('#nav');
 
 			if ($nav.length > 0) {
+				let $dropdowns = $nav.find('.dropdown'),
+					$dropdownToggles = $dropdowns.find('.dropdown-toggle');
+
+				let closeDropdowns = function() {
+					$dropdowns.removeClass('open');
+					$dropdownToggles.attr('aria-expanded', 'false');
+				};
+
+				$dropdownToggles.on('click', function(event) {
+					event.preventDefault();
+					event.stopPropagation();
+
+					let $toggle = $(this),
+						$dropdown = $toggle.parent('.dropdown'),
+						willOpen = !$dropdown.hasClass('open');
+
+					closeDropdowns();
+					$dropdown.toggleClass('open', willOpen);
+					$toggle.attr('aria-expanded', String(willOpen));
+				});
+
+				$(document).on('click', closeDropdowns);
+
+				$window.on('keydown', function(event) {
+					if (event.key === 'Escape' && $dropdowns.filter('.open').length > 0) {
+						let $openToggle = $dropdowns.filter('.open').find('.dropdown-toggle');
+						closeDropdowns();
+						$openToggle.trigger('focus');
+					}
+				});
 
 				// Shrink effect.
 					$main
@@ -69,10 +99,11 @@
 						})
 						.on('click', function() {
 
-							let $this = $(this);
+							let $this = $(this),
+								href = $this.attr('href');
 
-							// External link? Bail.
-								if ($this.attr('href').charAt(0) !== '#')
+							// External or empty fragment link? Bail.
+								if (!href || href === '#' || href.charAt(0) !== '#')
 									return;
 
 							// Deactivate all links.
@@ -89,8 +120,13 @@
 						.each(function() {
 
 							let	$this = $(this),
-								id = $this.attr('href'),
-								$section = $(id);
+								id = $this.attr('href');
+
+							// Not a valid section fragment? Bail before using it as a selector.
+								if (!id || id === '#' || id.charAt(0) !== '#')
+									return;
+
+							let $section = $(id);
 
 							// No section for this link? Bail.
 								if ($section.length < 1)

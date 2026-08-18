@@ -3326,6 +3326,51 @@
 						box-shadow: none;
 					}
 
+			#nav ul li.dropdown {
+				position: relative;
+			}
+
+				#nav ul li.dropdown .caret {
+					display: inline-block;
+					margin-left: 0.35em;
+					border-top: 0.3em solid;
+					border-right: 0.3em solid transparent;
+					border-left: 0.3em solid transparent;
+					vertical-align: middle;
+				}
+
+				#nav ul li.dropdown .dropdown-menu {
+					display: none;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					z-index: 10001;
+					min-width: 14em;
+					padding: 0.5em 0;
+					background: #ffffff;
+					border: solid 1px #dddddd;
+					border-radius: 8px;
+					box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.12);
+					text-align: left;
+				}
+
+				#nav ul li.dropdown.open .dropdown-menu {
+					display: block;
+				}
+
+					#nav ul li.dropdown .dropdown-menu li {
+						display: block;
+						margin: 0;
+					}
+
+						#nav ul li.dropdown .dropdown-menu li a {
+							display: block;
+							height: auto;
+							padding: 0.5em 1em;
+							line-height: 1.5;
+							white-space: nowrap;
+						}
+
 		#nav.alt {
 			position: fixed;
 			top: 0;
