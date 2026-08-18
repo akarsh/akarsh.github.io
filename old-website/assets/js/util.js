@@ -1,4 +1,5 @@
 (function($) {
+	'use strict';
 
 	/**
 	 * Generate an indented list of links from a nav. Meant for use with panel().
@@ -6,13 +7,13 @@
 	 */
 	$.fn.navList = function() {
 
-		var	$this = $(this);
+		let	$this = $(this),
 			$a = $this.find('a'),
 			b = [];
 
 		$a.each(function() {
 
-			var	$this = $(this),
+			let	$this = $(this),
 				indent = Math.max(0, $this.parents('li').length - 1),
 				href = $this.attr('href'),
 				target = $this.attr('target');
@@ -20,8 +21,8 @@
 			b.push(
 				'<a ' +
 					'class="link depth-' + indent + '"' +
-					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
-					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+					( (typeof target !== 'undefined' && target !== '') ? ' target="' + target + '"' : '') +
+					( (typeof href !== 'undefined' && href !== '') ? ' href="' + href + '"' : '') +
 				'>' +
 					'<span class="indent-' + indent + '"></span>' +
 					$this.text() +
@@ -40,15 +41,16 @@
 	 * @return {jQuery} jQuery object.
 	 */
 	$.fn.panel = function(userConfig) {
+		let $this = $(this);
 
 		// No elements?
-			if (this.length == 0)
+			if (this.length === 0)
 				return $this;
 
 		// Multiple elements?
 			if (this.length > 1) {
 
-				for (var i=0; i < this.length; i++)
+				for (let i=0; i < this.length; i++)
 					$(this[i]).panel(userConfig);
 
 				return $this;
@@ -56,8 +58,7 @@
 			}
 
 		// Vars.
-			var	$this = $(this),
-				$body = $('body'),
+			let	$body = $('body'),
 				$window = $(window),
 				id = $this.attr('id'),
 				config;
@@ -95,7 +96,7 @@
 			}, userConfig);
 
 			// Expand "target" if it's not a jQuery object already.
-				if (typeof config.target != 'jQuery')
+				if (!(config.target instanceof $))
 					config.target = $(config.target);
 
 		// Panel.
@@ -149,11 +150,11 @@
 					$this
 						.on('click', 'a', function(event) {
 
-							var $a = $(this),
+							let $a = $(this),
 								href = $a.attr('href'),
 								target = $a.attr('target');
 
-							if (!href || href == '#' || href == '' || href == '#' + id)
+							if (!href || href === '#' || href === '' || href === '#' + id)
 								return;
 
 							// Cancel original event.
@@ -166,7 +167,7 @@
 							// Redirect to href.
 								window.setTimeout(function() {
 
-									if (target == '_blank')
+									if (target === '_blank')
 										window.open(href);
 									else
 										window.location.href = href;
@@ -191,7 +192,7 @@
 					||	$this.touchPosY === null)
 						return;
 
-					var	diffX = $this.touchPosX - event.originalEvent.touches[0].pageX,
+					let	diffX = $this.touchPosX - event.originalEvent.touches[0].pageX,
 						diffY = $this.touchPosY - event.originalEvent.touches[0].pageY,
 						th = $this.outerHeight(),
 						ts = ($this.get(0).scrollHeight - $this.scrollTop());
@@ -199,7 +200,7 @@
 					// Hide on swipe?
 						if (config.hideOnSwipe) {
 
-							var result = false,
+							let result = false,
 								boundary = 20,
 								delta = 50;
 
@@ -287,7 +288,7 @@
 				if (config.hideOnEscape)
 					$window.on('keydown', function(event) {
 
-						if (event.keyCode == 27)
+						if (event.key === 'Escape')
 							$this._hide(event);
 
 					});
@@ -301,19 +302,20 @@
 	 * @return {jQuery} jQuery object.
 	 */
 	$.fn.placeholder = function() {
+		let $this = $(this);
 
 		// Browser natively supports placeholders? Bail.
-			if (typeof (document.createElement('input')).placeholder != 'undefined')
+			if (typeof (document.createElement('input')).placeholder !== 'undefined')
 				return $(this);
 
 		// No elements?
-			if (this.length == 0)
+			if (this.length === 0)
 				return $this;
 
 		// Multiple elements?
 			if (this.length > 1) {
 
-				for (var i=0; i < this.length; i++)
+				for (let i=0; i < this.length; i++)
 					$(this[i]).placeholder();
 
 				return $this;
@@ -321,16 +323,14 @@
 			}
 
 		// Vars.
-			var $this = $(this);
-
 		// Text, TextArea.
 			$this.find('input[type=text],textarea')
 				.each(function() {
 
-					var i = $(this);
+					let i = $(this);
 
-					if (i.val() == ''
-					||  i.val() == i.attr('placeholder'))
+					if (i.val() === ''
+					||  i.val() === i.attr('placeholder'))
 						i
 							.addClass('polyfill-placeholder')
 							.val(i.attr('placeholder'));
@@ -338,12 +338,12 @@
 				})
 				.on('blur', function() {
 
-					var i = $(this);
+					let i = $(this);
 
 					if (i.attr('name').match(/-polyfill-field$/))
 						return;
 
-					if (i.val() == '')
+					if (i.val() === '')
 						i
 							.addClass('polyfill-placeholder')
 							.val(i.attr('placeholder'));
@@ -351,12 +351,12 @@
 				})
 				.on('focus', function() {
 
-					var i = $(this);
+					let i = $(this);
 
 					if (i.attr('name').match(/-polyfill-field$/))
 						return;
 
-					if (i.val() == i.attr('placeholder'))
+					if (i.val() === i.attr('placeholder'))
 						i
 							.removeClass('polyfill-placeholder')
 							.val('');
@@ -367,8 +367,8 @@
 			$this.find('input[type=password]')
 				.each(function() {
 
-					var i = $(this);
-					var x = $(
+					let i = $(this);
+					let x = $(
 								$('<div>')
 									.append(i.clone())
 									.remove()
@@ -377,16 +377,16 @@
 									.replace(/type=password/i, 'type=text')
 					);
 
-					if (i.attr('id') != '')
+					if (i.attr('id') !== '')
 						x.attr('id', i.attr('id') + '-polyfill-field');
 
-					if (i.attr('name') != '')
+					if (i.attr('name') !== '')
 						x.attr('name', i.attr('name') + '-polyfill-field');
 
 					x.addClass('polyfill-placeholder')
 						.val(x.attr('placeholder')).insertAfter(i);
 
-					if (i.val() == '')
+					if (i.val() === '')
 						i.hide();
 					else
 						x.hide();
@@ -396,9 +396,9 @@
 
 							event.preventDefault();
 
-							var x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
+							let x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
 
-							if (i.val() == '') {
+							if (i.val() === '') {
 
 								i.hide();
 								x.show();
@@ -412,7 +412,7 @@
 
 							event.preventDefault();
 
-							var i = x.parent().find('input[name=' + x.attr('name').replace('-polyfill-field', '') + ']');
+							let i = x.parent().find('input[name=' + x.attr('name').replace('-polyfill-field', '') + ']');
 
 							x.hide();
 
@@ -437,12 +437,12 @@
 					$this.find('input[type=text],input[type=password],textarea')
 						.each(function(event) {
 
-							var i = $(this);
+							let i = $(this);
 
 							if (i.attr('name').match(/-polyfill-field$/))
 								i.attr('name', '');
 
-							if (i.val() == i.attr('placeholder')) {
+							if (i.val() === i.attr('placeholder')) {
 
 								i.removeClass('polyfill-placeholder');
 								i.val('');
@@ -462,7 +462,7 @@
 					$this.find('input,textarea')
 						.each(function() {
 
-							var i = $(this),
+							let i = $(this),
 								x;
 
 							i.removeClass('polyfill-placeholder');
@@ -478,7 +478,7 @@
 
 									x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
 
-									if (i.val() == '') {
+									if (i.val() === '') {
 										i.hide();
 										x.show();
 									}
@@ -491,14 +491,14 @@
 
 								case 'checkbox':
 								case 'radio':
-									i.attr('checked', i.attr('defaultValue'));
+									i.prop('checked', i.prop('defaultChecked'));
 									break;
 
 								case 'text':
 								case 'textarea':
 									i.val(i.attr('defaultValue'));
 
-									if (i.val() == '') {
+									if (i.val() === '') {
 										i.addClass('polyfill-placeholder');
 										i.val(i.attr('placeholder'));
 									}
@@ -525,20 +525,20 @@
 	 */
 	$.prioritize = function($elements, condition) {
 
-		var key = '__prioritize';
+		let key = '__prioritize';
 
 		// Expand $elements if it's not already a jQuery object.
-			if (typeof $elements != 'jQuery')
+			if (!($elements instanceof $))
 				$elements = $($elements);
 
 		// Step through elements.
 			$elements.each(function() {
 
-				var	$e = $(this), $p,
+				let	$e = $(this), $p,
 					$parent = $e.parent();
 
 				// No parent? Bail.
-					if ($parent.length == 0)
+					if ($parent.length === 0)
 						return;
 
 				// Not moved? Move it.
@@ -552,7 +552,7 @@
 							$p = $e.prev();
 
 							// Couldn't find anything? Means this element's already at the top, so bail.
-								if ($p.length == 0)
+								if ($p.length === 0)
 									return;
 
 						// Move element to top of parent.

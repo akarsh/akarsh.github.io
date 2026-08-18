@@ -5,6 +5,7 @@
 */
 
 (function($) {
+	'use strict';
 
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',
@@ -17,7 +18,7 @@
 
 	$(function() {
 
-		var	$window = $(window),
+		let	$window = $(window),
 			$body = $('body'),
 			$main = $('#main');
 
@@ -42,9 +43,39 @@
 			});
 
 		// Nav.
-			var $nav = $('#nav');
+			let $nav = $('#nav');
 
 			if ($nav.length > 0) {
+				let $dropdowns = $nav.find('.dropdown'),
+					$dropdownToggles = $dropdowns.find('.dropdown-toggle');
+
+				let closeDropdowns = function() {
+					$dropdowns.removeClass('open');
+					$dropdownToggles.attr('aria-expanded', 'false');
+				};
+
+				$dropdownToggles.on('click', function(event) {
+					event.preventDefault();
+					event.stopPropagation();
+
+					let $toggle = $(this),
+						$dropdown = $toggle.parent('.dropdown'),
+						willOpen = !$dropdown.hasClass('open');
+
+					closeDropdowns();
+					$dropdown.toggleClass('open', willOpen);
+					$toggle.attr('aria-expanded', String(willOpen));
+				});
+
+				$(document).on('click', closeDropdowns);
+
+				$window.on('keydown', function(event) {
+					if (event.key === 'Escape' && $dropdowns.filter('.open').length > 0) {
+						let $openToggle = $dropdowns.filter('.open').find('.dropdown-toggle');
+						closeDropdowns();
+						$openToggle.trigger('focus');
+					}
+				});
 
 				// Shrink effect.
 					$main
@@ -55,11 +86,11 @@
 							},
 							leave: function() {
 								$nav.removeClass('alt');
-							},
+							}
 						});
 
 				// Links.
-					var $nav_a = $nav.find('a');
+					let $nav_a = $nav.find('a');
 
 					$nav_a
 						.scrolly({
@@ -68,10 +99,11 @@
 						})
 						.on('click', function() {
 
-							var $this = $(this);
+							let $this = $(this),
+								href = $this.attr('href');
 
-							// External link? Bail.
-								if ($this.attr('href').charAt(0) != '#')
+							// External or empty fragment link? Bail.
+								if (!href || href === '#' || href.charAt(0) !== '#')
 									return;
 
 							// Deactivate all links.
@@ -87,9 +119,14 @@
 						})
 						.each(function() {
 
-							var	$this = $(this),
-								id = $this.attr('href'),
-								$section = $(id);
+							let	$this = $(this),
+								id = $this.attr('href');
+
+							// Not a valid section fragment? Bail before using it as a selector.
+								if (!id || id === '#' || id.charAt(0) !== '#')
+									return;
+
+							let $section = $(id);
 
 							// No section for this link? Bail.
 								if ($section.length < 1)
@@ -111,7 +148,7 @@
 											$section.removeClass('inactive');
 
 										// No locked links? Deactivate all links and activate this section's one.
-											if ($nav_a.filter('.active-locked').length == 0) {
+											if ($nav_a.filter('.active-locked').length === 0) {
 
 												$nav_a.removeClass('active');
 												$this.addClass('active');
